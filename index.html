@@ -93,13 +93,15 @@
                 <!-- flower cards container ends here -->  
                 <!-- flower buying calculation starts here -->
                 <div class="text-center">
-                    <h3>Code: Hero</h3>
-                    <div class="selected-items" id="selected-items">
+                    <h3>Coupon Code: <input type="text" name="" placeholder="Code" style="width:85px" class="rounded border border-primary-subtle" id="discount-field"></h3>
+                    <button id="submit" class="btn btn-primary mt-2" onclick="submitCouponCode()">Get the discount</button>
+                    <div class="selected-items mt-3" id="selected-items">
 
                     </div>
-                    <p class="mb-1">total: 00</p>
-                    <p class="mt-1">discount: 00</p>
-                    <h4 class="mt-5">grand Total: 00</h4>
+                    <p class="mb-1 mt-3">Total: $<span id="total">00</span></p>
+                    <p class="mt-1">Discount: $<span id="discount">00</span></p>
+                    <hr>
+                    <h4 class="mt-5">Grand Total: $<span id="payable-amount">00</span></h4>
                 </div>
                 <!-- flower buying calculation ends here -->
             </div>
