@@ -10,11 +10,103 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <h1>My Flower Shop</h1>
-    <button>Sum1</button>
-    <button>Sum2</button>
-    <button>Sum3</button>
-    <p></p>
+    <!-- header section starts here -->
+    <header class="mb-5">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary py-3">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                </li>
+                </ul>
+                <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <!-- header section ends here -->
+
+    <main>
+        <!-- all flower cards start here -->
+        <section>
+            <h1 class="text-center">All Flower Cards</h1>
+            <!-- flower cards & buying calculation starts here -->
+            <div id="flowers-and-buying-wrapper" class="d-flex">
+                <!-- flower cards container starts here -->
+                <div class="flower-cards-container d-flex gap-5">
+                    <!-- flower card 1 -->
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/Rectangle 4.png" class="card-img-top" alt="Rectangle 4">
+                        <div class="card-body">
+                        <h5 class="card-title">Snow White</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p>Price: $<span id="price">50</span></p>
+                        <a href="#" class="btn btn-primary">ADD TO CART</a>
+                        </div>
+                    </div>
+                    <!-- flower card 2 -->
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/Rectangle 5.png" class="card-img-top" alt="Rectangle 5">
+                        <div class="card-body">
+                        <h5 class="card-title">Snow White</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p>Price: $<span id="price">30</span></p>
+                        <a href="#" class="btn btn-primary">ADD TO CART</a>
+                        </div>
+                    </div>
+                    <!-- flower card 3 -->
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/Rectangle 6.png" class="card-img-top" alt="Rectangle 6">
+                        <div class="card-body">
+                        <h5 class="card-title">Snow White</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p>Price: $<span id="price">100</span></p>
+                        <a href="#" class="btn btn-danger">ADD TO CART</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- flower cards container ends here -->  
+                <!-- flower buying calculation starts here -->
+                <div class="text-center">
+                    <h3>Code: Hero</h3>
+                    <p class="mb-1">total: 00</p>
+                    <p class="mt-1">discount: 00</p>
+                    <h4 class="mt-5">grand Total: 00</h4>
+                </div>
+                <!-- flower buying calculation ends here -->
+            </div>
+            <!-- flower cards & buying calculation ends here -->
+        </section>
+        <!-- all flower cards start here -->
+    </main>
+
+
+
     <!-- Bootstrap CDN Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Custom JS Scripts -->

@@ -1,3 +1,15 @@
-h1{
-    color: purple;
+
+#flowers-and-buying-wrapper{
+    gap: 180px;
+    margin: 50px;
+}
+.navbar{
+    background-color: #dddddd45;
+}
+.card img{
+    height: 90%;
+}
+.card .btn{
+    background-color: #fb3713;
+    border-color: #fb3713;
 }
