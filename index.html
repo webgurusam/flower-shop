@@ -65,28 +65,28 @@
                         <div class="card-body">
                         <h5 class="card-title">Snow White</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <p>Price: $<span id="price">50</span></p>
-                        <a href="#" class="btn btn-primary">ADD TO CART</a>
+                        <p id="price">Price: $ 50</p>
+                        <a href="#" onclick="handleClickBtn(this)" class="btn btn-primary">ADD TO CART</a>
                         </div>
                     </div>
                     <!-- flower card 2 -->
                     <div class="card" style="width: 18rem;">
                         <img src="./images/Rectangle 5.png" class="card-img-top" alt="Rectangle 5">
                         <div class="card-body">
-                        <h5 class="card-title">Snow White</h5>
+                        <h5 class="card-title">Blue White</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <p>Price: $<span id="price">30</span></p>
-                        <a href="#" class="btn btn-primary">ADD TO CART</a>
+                        <p id="price">Price: $ 30</p>
+                        <a href="#" onclick="handleClickBtn(this)" class="btn btn-primary">ADD TO CART</a>
                         </div>
                     </div>
                     <!-- flower card 3 -->
                     <div class="card" style="width: 18rem;">
                         <img src="./images/Rectangle 6.png" class="card-img-top" alt="Rectangle 6">
                         <div class="card-body">
-                        <h5 class="card-title">Snow White</h5>
+                        <h5 class="card-title">Black White</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <p>Price: $<span id="price">100</span></p>
-                        <a href="#" class="btn btn-danger">ADD TO CART</a>
+                        <p id="price">Price: $ 100</p>
+                        <a href="#" onclick="handleClickBtn(this)" class="btn btn-danger">ADD TO CART</a>
                         </div>
                     </div>
                 </div>
@@ -94,6 +94,9 @@
                 <!-- flower buying calculation starts here -->
                 <div class="text-center">
                     <h3>Code: Hero</h3>
+                    <div class="selected-items" id="selected-items">
+
+                    </div>
                     <p class="mb-1">total: 00</p>
                     <p class="mt-1">discount: 00</p>
                     <h4 class="mt-5">grand Total: 00</h4>
